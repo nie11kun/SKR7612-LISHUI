@@ -26,7 +26,7 @@
 	DEF VAR8=(R3/-2000,2000//$85108,$85108,,/WR2/"panel_18_7_chs.png"/"/NC/_N_NC_GD2_ACX/INI[2]"/360,100,202/460,100,60/6/"UserGuide/section_1.html","S1D10");
 	DEF VAR9=(R3/-2000,2000//$85109,$85109,,/WR2/"panel_18_8_chs.png"/"/NC/_N_NC_GD2_ACX/INI[3]"/360,120,202/460,120,60/6/"UserGuide/section_1.html","S1D11");
 	DEF VAR10=(R/-500,500//$85165,$85165,,/WR2/"panel_18_9_chs.png"/"/NC/_N_NC_GD2_ACX/INI[11]"/360,150,202/460,150,60/6/"UserGuide/section_1.html","S1D28");
-	DEF X_QUIT=(R/-500,500//$85106,$85106,,/WR2/"panel_18_25_chs.png"/"/NC/_N_NC_GD2_ACX/INI[24]"/360,170,202/460,170,60/6/"UserGuide/section_1.html","S1D14");
+	DEF X_QUIT=(R/-800,800//$85106,$85106,,/WR2/"panel_18_25_chs.png"/"/NC/_N_NC_GD2_ACX/INI[24]"/360,170,202/460,170,60/6/"UserGuide/section_1.html","S1D14");
 	DEF PITCH_COM=(R/-500,500//$85105,$85105,$85043,/WR2/"panel_18_26_chs.png"/"/NC/_N_NC_GD2_ACX/INI[25]"/360,190,202/460,190,60//"UserGuide/section_1.html","S1D15");
 	DEF C_INIT=(R/0,360//$85100,$85100,$85042,/WR2/"panel_18_22_chs.png"/"/NC/_N_NC_GD2_ACX/INI[28]"/360,220,202/460,220,60//"UserGuide/section_1.html","S1D29");
 	DEF Z_INIT=(R/-2000,2000//$85101,$85101,,/WR2/"panel_18_23_chs.png"/"/NC/_N_NC_GD2_ACX/INI[29]"/360,240,202/460,240,60/6/"UserGuide/section_1.html","S1D30");
