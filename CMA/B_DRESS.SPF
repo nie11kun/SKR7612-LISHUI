@@ -3,6 +3,7 @@ PROC B_DRESS DISPLON
 ;*修整主程序
 ;****************************
 
+M28
 C_DRESS_CHOICE;
 C_DRESS_START;
 
@@ -17,8 +18,6 @@ ENDIF
 
 C_DRESS_SHAPE_INIT;
 C_LINESPEED_DRESS;
-
-M28;
 
 IF (DRESSER[0]==0) OR (DRESSER[0]==1);
     C_DRESS_INIT_POSITION_CB;

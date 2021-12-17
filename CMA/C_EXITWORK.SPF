@@ -14,7 +14,7 @@ ELSE
         IF INI[84]==0
             G90 G01 X=INI[10] F=PROCESS[11]*4;
         ELSE
-            G91 G01 X0.05 F20
+            G91 G01 X0.2 F20
         ENDIF
         IF INI[84]==0;
             G90 G01 Z=INI[6] F=INI[56];
