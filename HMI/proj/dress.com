@@ -3,71 +3,71 @@
 
 	DEF VAR0=(R///$85366,$85366,,$85043/WR1//"/NC/_N_NC_GD2_ACX/DRESSER[10]"/110,10,110/200,10,110//"UserGuide/section_3.html","S3D18");
 
-	DEF VAR5=(I/0,1000//$85340,$85340,,/WR2/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[26]"/330,60,110/440,60,60//"UserGuide/section_3.html","S3D7");
-	DEF VAR6=(R/0,0.5//$85308,$85308,,$85043/WR2/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[28]"/330,80,110/440,80,110//"UserGuide/section_3.html","S3D8");
-	DEF VAR7=(R/0,1000//$85306,$85306,,$85045/WR2/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[30]"/330,100,110/440,100,110//"UserGuide/section_3.html","S3D9");
+	DEF VAR5=(I/0,1000//$85340,$85340,,/WR2/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[26]"/330,60,110/440,60,60/,9/"UserGuide/section_3.html","S3D7");
+	DEF VAR6=(R/0,0.5//$85308,$85308,,$85043/WR2,ac4/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[28]"/330,80,110/440,80,110//"UserGuide/section_3.html","S3D8");
+	DEF VAR7=(R/0,1000//$85306,$85306,,$85045/WR2,ac4/"panel_3_5_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[30]"/330,100,110/440,100,110//"UserGuide/section_3.html","S3D9");
 
-	DEF VAR8=(I/0,1000//$85341,$85341,,/WR2/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[27]"/330,130,110/440,130,60//"UserGuide/section_3.html","S3D10");
-	DEF VAR9=(R/0,0.5//$85309,$85309,,$85043/WR2/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[29]"/330,150,110/440,150,110//"UserGuide/section_3.html","S3D11");
-	DEF VAR10=(R/0,1000//$85307,$85307,,$85045/WR2/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[31]"/330,170,110/440,170,110//"UserGuide/section_3.html","S3D12");
+	DEF VAR8=(I/0,1000//$85341,$85341,,/WR2/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[27]"/330,130,110/440,130,60/,9/"UserGuide/section_3.html","S3D10");
+	DEF VAR9=(R/0,0.5//$85309,$85309,,$85043/WR2,ac4/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[29]"/330,150,110/440,150,110//"UserGuide/section_3.html","S3D11");
+	DEF VAR10=(R/0,1000//$85307,$85307,,$85045/WR2,ac4/"panel_3_6_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[31]"/330,170,110/440,170,110//"UserGuide/section_3.html","S3D12");
 
-	DEF VAR12=(R/0,200//$85316,$85316,,$85043/WR4/"panel_3_9_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[23]"/330,200,110/440,200,110//"UserGuide/section_3.html","S3D13");
-	DEF VAR13=(R/0,1000//$85319,$85319,,$85043/WR2/"panel_3_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[24]"/330,220,110/440,220,110//"UserGuide/section_3.html","S3D14");
+	DEF VAR12=(R/0,200//$85316,$85316,,$85043/WR4,ac4/"panel_3_9_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[23]"/330,200,110/440,200,110//"UserGuide/section_3.html","S3D13");
+	DEF VAR13=(R/0,1000//$85319,$85319,,$85043/WR2,ac4/"panel_3_7_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[24]"/330,220,110/440,220,110//"UserGuide/section_3.html","S3D14");
 	DEF VAR14=(R/0,1000//$85320,$85320,,$85043/WR1//"/NC/_N_NC_GD2_ACX/DRESSER[25]"/330,240,110/440,240,110/);
 	DEF VAR15=(R/0,80//$85317,$85317,,$85046/WR1/"panel_3_8_chs.png"/"/NC/_N_NC_GD2_ACX/WHEEL_LINESPEED_DRESS[2]"/330,260,110/440,260,110//"UserGuide/section_3.html","S3D15");
-	DEF VAR16=(I/0,//$85221,$85221,,$85044/WR1/"panel_3_15_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[37]"/330,280,110/440,280,110//"UserGuide/section_3.html","S3D19");
+	DEF VAR16=(I/0,//$85221,$85221,,$85044/WR1/"panel_3_15_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[37]"/330,280,110/440,280,110/,9/"UserGuide/section_3.html","S3D19");
 
 	DEF VAR4=(I/*0=$85327,1=$85328//$85350,,,/WR2/"panel_3_4_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[6]"/0,0,0/440,30,60//"UserGuide/section_3.html","S3D16");
-	DEF CHENGXING=(I/*0=$85301,1=$85302//$85300,,,/WR4/"panel_3_14_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[114]"/0,0,0/510,30,40//"UserGuide/section_3.html","S3D17");
+	DEF CHENGXING=(I/*0=$85301,1=$85302//$85300,,,/WR4,ac4/"panel_3_14_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[114]"/0,0,0/510,30,40//"UserGuide/section_3.html","S3D17");
 
 	;
 ;
-	DEF WHEEL_N_MIN=(R/0,1000//$85303,$85303,,$85043/WR4/"panel_3_12_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[36]"/310,310,130/440,310,110//"UserGuide/section_3.html","S3D5");
-	DEF WHEEL_N_MAX=(R/0,1000//$85304,$85304,,$85043/WR4/"panel_3_13_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[50]"/310,330,130/440,330,110//"UserGuide/section_3.html","S3D6");
+	DEF WHEEL_N_MIN=(R/0,1000//$85303,$85303,,$85043/WR4,ac4/"panel_3_12_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[36]"/310,310,130/440,310,110//"UserGuide/section_3.html","S3D5");
+	DEF WHEEL_N_MAX=(R/0,1000//$85304,$85304,,$85043/WR4,ac4/"panel_3_13_chs.png"/"/NC/_N_NC_GD2_ACX/DRESSER[50]"/310,330,130/440,330,110//"UserGuide/section_3.html","S3D6");
 
-	DEF DRESSANG=(R///$85310,$85310,,$85042/WR4/"panel_3_16_chs.png"/"/NC/_N_NC_GD2_ACX/INI[154]"/110,30,110/200,30,110//"UserGuide/section_3.html","S3D20");修整时A轴角度
-	DEF DISPDRESSANG=(R////WR4//"/NC/_N_NC_GD2_ACX/INI[155]"/0,0,0/0,0,0/);显示A角度调整参数
-
-;
-;
-	DEF VAR1=(I/*1=$85345,4=$85348//$85387,,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[1]"/0,0,0/335,10,60//"UserGuide/section_3.html","S3D2");
-;
-;
-
-	DEF VAR2=(I/*0=$85380,2=$85382//$85388,,,/WR2//"/NC/_N_NC_GD2_ACX/DRESSER[4]"/0,0,0/440,10,60//"UserGuide/section_3.html","S3D3");
-;
+	DEF DRESSANG=(R///$85310,$85310,,$85042/WR4,ac4/"panel_3_16_chs.png"/"/NC/_N_NC_GD2_ACX/INI[154]"/110,30,110/200,30,110//"UserGuide/section_3.html","S3D20");修整时A轴角度
+	DEF DISPDRESSANG=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/INI[155]"/0,0,0/0,0,0/);显示A角度调整参数
 
 ;
-	DEF VAR3=(I/*2=$85385/2/$85389,,,/WR4//"/NC/_N_NC_GD2_ACX/DRESSER[5]"/0,0,0/335,30,60/);
-	DEF cixindiaoyong=(I////WR4//"/NC/_N_NC_GD2_ACX/DRESSER[115]"/0,0,0/0,0,0/);
+;
+	DEF VAR1=(I/*1=$85345,4=$85348//$85387,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[1]"/0,0,0/335,10,60//"UserGuide/section_3.html","S3D2");
+;
+;
 
-	DEF ROLLING_1=(I/*0=$85379,1=$85379/0/$85388,,,/WR4///0,0,0/440,10,60/);
-	DEF HY_1=(I/*0=$85378,1=$85378/0/$85388,,,/WR4///0,0,0/440,10,60/);
+	DEF VAR2=(I/*0=$85380,2=$85382//$85388,,,/WR2,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[4]"/0,0,0/440,10,60//"UserGuide/section_3.html","S3D3");
+;
 
-	DEF N_CX_X_TYPE=(I//0//WR4//"/NC/_N_NC_GD2_ACX/DRESSER[38]"/0,0,0/0,0,0/);
+;
+	DEF VAR3=(I/*2=$85385/2/$85389,,,/WR4,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[5]"/0,0,0/335,30,60/);
+	DEF cixindiaoyong=(I////WR4,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[115]"/0,0,0/0,0,0/);
+
+	DEF ROLLING_1=(I/*0=$85379,1=$85379/0/$85388,,,/WR4,ac4///0,0,0/440,10,60/);
+	DEF HY_1=(I/*0=$85378,1=$85378/0/$85388,,,/WR4,ac4///0,0,0/440,10,60/);
+
+	DEF N_CX_X_TYPE=(I//0//WR4,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[38]"/0,0,0/0,0,0/);
 ;
 
 	;
 
 	;
 
-	DEF VAR20=(S1////WR4//"/NC/_N_NC_GD2_ACX/AXIS_VER"/0,0,0/0,0,0/);
-	DEF VAR21=(S1////WR4//"/NC/_N_NC_GD2_ACX/AXIS_HORI"/0,0,0/0,0,0/);
-	DEF QCHECK=(I////WR4//"/Plc/Q113.5"/0,0,0/0,0,0);
+	DEF VAR20=(S1////WR4,ac4//"/NC/_N_NC_GD2_ACX/AXIS_VER"/0,0,0/0,0,0/);
+	DEF VAR21=(S1////WR4,ac4//"/NC/_N_NC_GD2_ACX/AXIS_HORI"/0,0,0/0,0,0/);
+	DEF QCHECK=(I////WR4,ac4//"/Plc/Q113.5"/0,0,0/0,0,0);
 
-	DEF VAR30=(R////WR4//"/NC/_N_NC_GD2_ACX/DRESSER[3]"/0,0,0/0,0,0);
-	DEF VAR31=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[13]"/0,0,0/0,0,0/);
-	DEF VAR40=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[14]"/0,0,0/0,0,0/);
-	DEF VAR41=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[11]"/0,0,0/0,0,0/);
-	DEF VAR42=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[12]"/0,0,0/0,0,0/);
-	DEF VAR32=(R////WR4//"/NC/_N_NC_GD2_ACX/DRESSER[2]"/0,0,0/0,0,0/);
-	DEF VAR33=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[15]"/0,0,0/0,0,0/);
-	DEF VAR34=(R////WR4//"/NC/_N_NC_GD2_ACX/WHEEL[1]"/0,0,0/0,0,0/);
+	DEF VAR30=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[3]"/0,0,0/0,0,0);
+	DEF VAR31=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[13]"/0,0,0/0,0,0/);
+	DEF VAR40=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[14]"/0,0,0/0,0,0/);
+	DEF VAR41=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[11]"/0,0,0/0,0,0/);
+	DEF VAR42=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[12]"/0,0,0/0,0,0/);
+	DEF VAR32=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/DRESSER[2]"/0,0,0/0,0,0/);
+	DEF VAR33=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[15]"/0,0,0/0,0,0/);
+	DEF VAR34=(R////WR4,ac4//"/NC/_N_NC_GD2_ACX/WHEEL[1]"/0,0,0/0,0,0/);
 	
-	DEF TYPE=(I////WR4//"/NC/_N_NC_GD2_ACX/GRIND[1]"/0,0,0/0,0,0/);
-	DEF TECH=(I////WR4//"/NC/_N_NC_GD2_ACX/PROCESS[16]"/0,0,0/0,0,0);
-	DEF PIECE_VOLUME=(I////WR4//"/NC/_N_NC_GD2_ACX/INI[27]"/0,0,0/0,0,0/);
-	DEF WHEEL_RUN_MODE=(I////WR4//"/NC/_N_NC_GD2_ACX/INI[145]"/0,0,0/0,0,0/);
+	DEF TYPE=(I////WR4,ac4//"/NC/_N_NC_GD2_ACX/GRIND[1]"/0,0,0/0,0,0/);
+	DEF TECH=(I////WR4,ac4//"/NC/_N_NC_GD2_ACX/PROCESS[16]"/0,0,0/0,0,0);
+	DEF PIECE_VOLUME=(I////WR4,ac4//"/NC/_N_NC_GD2_ACX/INI[27]"/0,0,0/0,0,0/);
+	DEF WHEEL_RUN_MODE=(I////WR4,ac4//"/NC/_N_NC_GD2_ACX/INI[145]"/0,0,0/0,0,0/);
 
 	DEF NEIMO=(I///$85031,$85031,,/WR1,ac7,al0,fs2,li0,cb0///20,320,200/0,0,0/);
 	
