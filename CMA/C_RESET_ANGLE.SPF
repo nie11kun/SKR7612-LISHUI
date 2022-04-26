@@ -6,12 +6,12 @@ PROC C_RESET_ANGLE DISPLOF
 IF INI[16]==1
 	IF ABS($AA_IM[A]-INI[153])*1000>=1
 		M73;
-		G4 F1
+		G4 F0.5
 		M35;
 		;WHILE($A_DBB[14]==0);
 		;	G4 F0.2
 		;ENDWHILE
-		G4 F1
+		G4 F0.5
 ;
 		MSG("螺旋升角置零中");
 		G90 G01 A=INI[153]-1 F=INI[60]
@@ -20,7 +20,7 @@ IF INI[16]==1
 		STOPRE
 		G4 F0.5
 		M36;
-		G4 F1
+		G4 F0.5
 		M74
 	ENDIF
 ENDIF

@@ -25,6 +25,7 @@ M26;
 IF GRIND[1]<>0
     B_DRESS;
     INI[40]=0;
+    GRIND[2]=0;不对刀
     GOTOF G_ENDING
 ENDIF
 

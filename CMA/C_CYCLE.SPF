@@ -4,6 +4,8 @@ PROC C_CYCLE DISPLON
 ;*螺纹磨削初始走位及子程序的调用,磨削中修整的调用
 ;****************************
 
+DEF REAL DWHEEL_RPM;
+
 IF TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==0
     RET
 ENDIF
@@ -32,7 +34,7 @@ IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==1) OR (INI
     IF RING[0]==0;
         D_GRIND_INIT_POSITION(INI[28],INI[10],INI[56],INI[55]);
         M8
-        G01 G90 Z=INI[6] F=INI[56]
+        ;G01 G90 Z=INI[6] F=INI[56]
     ELSE
         IF $AA_IM[X]<>INI[10];
             D_GRIND_INIT_POSITION(INI[28],INI[10],INI[56],INI[55]);
@@ -44,6 +46,18 @@ IF (TECH_TIME[0]+TECH_TIME[1]+TECH_TIME[2]+TECH_TIME[3]+TECH_TIME[4]==1) OR (INI
     ;*********************
 
 ENDIF
+
+    IF PROCESS[3]==1;如果下一刀结束后要修砂轮
+        INI[114]=0;修整轮静止启动延时
+        
+        DWHEEL_RPM=WHEEL[1]*60000/($PI*WHEEL[0])
+        IF DWHEEL_RPM>INI[151];
+            DWHEEL_RPM=INI[151]
+        ENDIF
+        F_DRESSWHEEL_RUN(DWHEEL_RPM)
+        
+        INI[114]=3;修整轮静止启动延时
+    ENDIF
 
 ;M8;
 

@@ -4,6 +4,28 @@ PROC N_CYCLE DISPLON
 ;*螺纹磨削初始走位及子程序的调用，磨削中修整的调用
 ;****************************
 
+DEF REAL SPEED_EW,SPEED_Z
+
+IF GRIND[7]==0;当前磨削左端面/右端面(0左/1右)
+    IF ABS($AA_IM[Z]-PROCESS[34])>50;台面当前位置比较磨削初始位相差50mm以上
+        SPEED_Z=4000
+    ELSE
+        SPEED_Z=1500
+    ENDIF
+ELSE
+    IF ABS($AA_IM[Z]-PROCESS[37])>50;台面当前位置比较磨削初始位相差50mm以上
+        SPEED_Z=4000
+    ELSE
+        SPEED_Z=1500
+    ENDIF
+ENDIF
+
+IF ABS($AA_IM[AXNAME(AXIS_EW)]-INI[6])>50;外圆当前位置比较磨削初始位相差50mm以上
+    SPEED_EW=4000
+ELSE
+    SPEED_EW=1500
+ENDIF
+
 IF TECHNOLOGY[98]+TECHNOLOGY[100]==0
 	RET
 ENDIF
@@ -24,9 +46,9 @@ IF (TECHNOLOGY[98]+TECHNOLOGY[100]==1) OR (INI[72]==1);
 ;
     MSG("台面到磨削起点");
     IF GRIND[7]==0;
-        G01 Z=PROCESS[34]+1 F=INI[56] ;
+        G01 Z=PROCESS[34]+1 F=SPEED_Z ;
     ELSE
-        G01 Z=PROCESS[37]+1 F=INI[56] ;
+        G01 Z=PROCESS[37]+1 F=SPEED_Z ;
     ENDIF
 
     IF INI[156]==0;工件是否在旋转(0未旋转1旋转中)
@@ -42,9 +64,9 @@ IF (TECHNOLOGY[98]+TECHNOLOGY[100]==1) OR (INI[72]==1);
 ;
     MSG("砂轮到安全位置");
     IF PROCESS[57]==1;
-        G90 G01 AX[AXNAME(AXIS_EW)]=INI[6]+1 F=INI[105];
+        G90 G01 AX[AXNAME(AXIS_EW)]=INI[6]+1 F=SPEED_EW;
     ELSE
-        G90 G01 AX[AXNAME(AXIS_EW)]=INI[6]-1 F=INI[55];
+        G90 G01 AX[AXNAME(AXIS_EW)]=INI[6]-1 F=SPEED_EW;
     ENDIF
 ENDIF
 
@@ -84,16 +106,16 @@ IF (TECHNOLOGY[98]+TECHNOLOGY[100]==TECHNOLOGY[245]+TECHNOLOGY[246]);
     MSG("砂轮到安全位置");
     IF (GRIND[7]==1) AND (PROCESS[44]==1);
         IF PROCESS[57]==1;
-            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+INI[43]+2 F=INI[105];
+            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+INI[43]+2 F=4000;
         ELSE
-            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-INI[43]-2 F=INI[54];
+            G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-INI[43]-2 F=4000;
         ENDIF
     ELSE
         IF PROCESS[94]==1;
             IF PROCESS[57]==1;
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+2 F=INI[105];
+                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]+2 F=4000;
             ELSE
-                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-2 F=INI[55];
+                G90 G01 AX[AXNAME(AXIS_EW)]=PROCESS[20]-2 F=4000;
             ENDIF
         ELSE
             IF PROCESS[57]==1;

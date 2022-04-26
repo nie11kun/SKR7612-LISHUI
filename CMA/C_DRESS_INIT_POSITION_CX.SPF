@@ -35,5 +35,7 @@ ELSE
     ENDIF
 ENDIF
 
+G90 G1 X=WHEEL[10] F=6;慢速移动到接触位
+
 RET
 
