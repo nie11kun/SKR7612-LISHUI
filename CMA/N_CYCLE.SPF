@@ -121,7 +121,7 @@ IF (TECHNOLOGY[98]+TECHNOLOGY[100]==TECHNOLOGY[245]+TECHNOLOGY[246]);
             IF PROCESS[57]==1;
                 G90 G01 AX[AXNAME(AXIS_EW)]=INI[107] F=INI[105];
             ELSE
-                G90 G01 AX[AXNAME(AXIS_EW)]=INI[107] F=INI[54];
+                G90 G01 AX[AXNAME(AXIS_EW)]=INI[10] F=INI[54];
             ENDIF
         ENDIF
     ENDIF
