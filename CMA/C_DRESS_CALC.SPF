@@ -4,6 +4,10 @@ PROC C_DRESS_CALC SBLOF DISPLOF
 ;*修整次数累加，粗精修切换，赋值
 ;****************************
 
+IF DRESSER[47]==0
+    DRESSER[47]=WHEEL[18]
+ENDIF
+
 IF DRESSER[20]<DRESSER[13];
     DRESSER[20]=DRESSER[20]+1;
     IF DRESSER[11]<>0;
@@ -15,6 +19,8 @@ IF DRESSER[20]<DRESSER[13];
         DRESSER[10]=DRESSER[16];
 ;
         MSG("轮廓初始修型中-->正在进行第"<<DRESSER[20]<<"次,还剩"<<DRESSER[13]-DRESSER[20]<<"次完成,进给量:"<<DRESSER[14]<<"mm");
+
+        DRESSER[48]=DRESSER[47];成型修整当前停留时间
     ELSE
         IF DRESSER[133]==0;
             D_DRESS_TOUCH_CURNT(DRESSER[15]);
@@ -24,6 +30,8 @@ IF DRESSER[20]<DRESSER[13];
         DRESSER[10]=DRESSER[17]
 ;
         MSG("轮廓初始修型中-->正在进行第"<<DRESSER[20]<<"次,还剩"<<DRESSER[13]-DRESSER[20]<<"次完成,进给量:"<<DRESSER[15]<<"mm");
+
+        DRESSER[48]=WHEEL[18];成型修整当前停留时间
     ENDIF
 ELSE
     IF DRESSER[18]<DRESSER[11]
@@ -36,6 +44,8 @@ ELSE
 
 ;
         MSG("粗修整中-->正在进行第"<<DRESSER[18]<<"次,还剩"<<DRESSER[11]-DRESSER[18]<<"次完成,进给量:"<<DRESSER[14]<<"mm");
+
+        DRESSER[48]=DRESSER[47];成型修整当前停留时间
     ELSE
         IF DRESSER[19]<DRESSER[12]
             DRESSER[19]=DRESSER[19]+1
@@ -47,6 +57,8 @@ ELSE
 
 ;
             MSG("精修整中-->正在进行第"<<DRESSER[19]<<"次,还剩"<<DRESSER[12]-DRESSER[19]<<"次完成,进给量:"<<DRESSER[15]<<"mm");
+
+            DRESSER[48]=WHEEL[18];成型修整当前停留时间
         ELSE
             DRESSER[19]=DRESSER[19]+1
         ENDIF

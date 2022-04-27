@@ -8,7 +8,7 @@ STOPRE
 
 IF PROCESS[0]==0;
     M9;
-    M39;
+    ;M39;
     M29;
     M57;
     ;

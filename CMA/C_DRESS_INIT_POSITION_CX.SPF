@@ -18,7 +18,8 @@ IF DRESSER[37]==0;
     C_RESET_ANGLE;
 ;
     MSG("台面到位中");
-    G90 G1 Z=DRESSER[21] F=INI[56]
+    G90 G1 Z=DRESSER[21]+5 F=INI[56]
+    G90 G1 Z=DRESSER[21] F=2000
 ENDIF
 ;
 MSG("修整轮运行至修整位置");
