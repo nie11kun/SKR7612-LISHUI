@@ -752,8 +752,10 @@
 	SUB(UP3)
 		IF para_switch1.VAL==0
 			VAR0.WR=2
+			VAR12.WR=2
 		ELSE
 			VAR0.WR=1
+			VAR12.WR=1
 		ENDIF
 	END_SUB
 
