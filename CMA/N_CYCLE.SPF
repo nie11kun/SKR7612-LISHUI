@@ -8,20 +8,20 @@ DEF REAL SPEED_EW,SPEED_Z
 
 IF GRIND[7]==0;当前磨削左端面/右端面(0左/1右)
     IF ABS($AA_IM[Z]-PROCESS[34])>50;台面当前位置比较磨削初始位相差50mm以上
-        SPEED_Z=4000
+        SPEED_Z=8000
     ELSE
         SPEED_Z=1500
     ENDIF
 ELSE
     IF ABS($AA_IM[Z]-PROCESS[37])>50;台面当前位置比较磨削初始位相差50mm以上
-        SPEED_Z=4000
+        SPEED_Z=8000
     ELSE
         SPEED_Z=1500
     ENDIF
 ENDIF
 
 IF ABS($AA_IM[AXNAME(AXIS_EW)]-INI[6])>50;外圆当前位置比较磨削初始位相差50mm以上
-    SPEED_EW=4000
+    SPEED_EW=8000
 ELSE
     SPEED_EW=1500
 ENDIF
