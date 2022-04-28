@@ -6,6 +6,21 @@ PROC N_CYCLE DISPLON
 
 DEF REAL SPEED_EW,SPEED_Z
 
+IF TECHNOLOGY[98]+TECHNOLOGY[100]==0
+	RET
+ENDIF
+
+IF INI[100]==1;
+    IF (PROCESS[45]+PROCESS[44]==1) OR (GRIND[7]==1);
+        INI[100]=0;
+        N_DRESS;
+        IF DRESSER[6]<>0;
+            RET
+        ENDIF
+        O_LINESPEED_GRIND;
+    ENDIF
+ENDIF
+
 IF GRIND[7]==0;当前磨削左端面/右端面(0左/1右)
     IF ABS($AA_IM[Z]-PROCESS[34])>50;台面当前位置比较磨削初始位相差50mm以上
         SPEED_Z=8000
@@ -24,21 +39,6 @@ IF ABS($AA_IM[AXNAME(AXIS_EW)]-INI[6])>50;外圆当前位置比较磨削初始�
     SPEED_EW=8000
 ELSE
     SPEED_EW=1500
-ENDIF
-
-IF TECHNOLOGY[98]+TECHNOLOGY[100]==0
-	RET
-ENDIF
-
-IF INI[100]==1;
-    IF (PROCESS[45]+PROCESS[44]==1) OR (GRIND[7]==1);
-        INI[100]=0;
-        N_DRESS;
-        IF DRESSER[6]<>0;
-            RET
-        ENDIF
-        O_LINESPEED_GRIND;
-    ENDIF
 ENDIF
 
 IF (TECHNOLOGY[98]+TECHNOLOGY[100]==1) OR (INI[72]==1);
